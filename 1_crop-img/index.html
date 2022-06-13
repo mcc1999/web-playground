@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Img</title>
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Img Crop</h1>
+  <div class="usage">
+    <p>1.Select an image, get the origin image.</p>
+    <p>2.Set the start position(x、y) and width/height.</p>
+    <p>3.Click the crop button, preview the cropped image.</p>
+    <p>4.Also click the save button, save the cropped image.</p>
+  </div>
+  <div>
+    <input type="file" id="img_file" accept="image/*" />
+  </div>
+  <div class="preview">
+    <img id="img_preview" alt="img preview">
+    <img id="img_cropped" alt="cropped img preview">
+  </div>
+  <div class="size_params">
+    x: <input type="number" id="x">
+    y: <input type="number" id="y">
+    width: <input type="number" id="width">
+    height: <input type="number" id="height">
+    <input type="button" value="crop" onclick="handleClickCrop()" />
+  </div>
+  <div>
+    cropped img save as:
+    <input type="text" id='save_file' />
+    <input type="button" value="save" onclick="handleClickSave()" />
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

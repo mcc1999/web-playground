@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+  background-color: #e9e9e9;
+}
+
+img {
+  width: 131.6px;
+  height: 196px;
+  margin: 6px;
+  border-radius: 8px;
+}
+
+#img_container {
+  width: 750px;
+  margin: 0 auto;
+}
