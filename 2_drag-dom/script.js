@@ -32,11 +32,6 @@ imgContainer.ondragover = (event) => {
       if (target && target.animated) {
         return;
       }
-      if (target) {
-        if (target.animated) {
-          return;
-        }
-      }
       if (getIndex(draggingNode) < getIndex(target)) {
         //nextSibling 属性可返回某个元素之后紧跟的节点（处于同一树层级中）。
         target.parentNode.insertBefore(draggingNode, target.nextSibling);
